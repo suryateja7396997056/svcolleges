@@ -26,7 +26,6 @@ body {
   color: var(--text-dark);
   background-color: var(--bg-color);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,9 +112,46 @@ img {
   color: var(--white);
 }
 
+/* Top Bar */
+.top-bar {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 8px 0;
+  font-size: 0.85rem;
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-left span {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.top-bar-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.top-bar i {
+  color: var(--secondary-color);
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .top-bar-container {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
+
 /* Navbar */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
