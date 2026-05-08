@@ -593,7 +593,7 @@ footer {
 
 @media (max-width: 768px) {
   /* Replaced by mobile layout fixes */
-  .mobile-menu-btn { display: block; }
+  
   .hero-content h1 { font-size: 2.5rem; }
   .stats-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -651,28 +651,36 @@ footer {
     font-size: 1.1rem !important;
   }
   
-  /* Mobile Navbar Fixes */
+  
+/* --- Re-applied Mobile Navbar Fixes for Tablet (992px) --- */
+@media (max-width: 992px) {
   .navbar-container {
     position: relative;
   }
   
   .nav-links {
     position: absolute;
-    top: 100%; /* Directly below navbar */
-    left: -100%;
+    top: 100%;
+    left: 0;
+    width: 100%;
     flex-direction: column;
     background: var(--white);
-    width: 100vw;
-    height: 80vh;
-    padding: 1rem 2rem;
+    padding: 1.5rem;
+    height: auto;
+    max-height: calc(100vh - 70px);
     overflow-y: auto;
-    transition: left 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     align-items: flex-start;
   }
   
   .nav-links.active {
-    left: -2rem; /* Account for container padding to span full width */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   
   .nav-links li {
@@ -680,47 +688,57 @@ footer {
     margin-bottom: 1rem;
   }
   
-  /* Mobile Dropdown Fix */
   .dropdown-menu {
-    position: static; /* Prevent absolute positioning overlap */
+    position: static;
     opacity: 1;
     visibility: visible;
     transform: none;
     box-shadow: none;
-    padding: 0 0 0 1rem; /* Indent */
+    padding: 0 0 0 1rem;
     background: transparent;
-    display: none; /* Hide by default on mobile */
+    display: none;
     margin-top: 0.5rem;
   }
   
   .dropdown.active .dropdown-menu {
-    display: block; /* Show when toggled via JS */
+    display: block;
   }
   
   .dropdown:hover .dropdown-menu {
-    /* Disable hover on mobile to prevent conflicts with JS toggle */
     display: none; 
   }
   .dropdown.active:hover .dropdown-menu {
     display: block;
   }
   
-  /* Logo adjustments */
+  .mobile-menu-btn { display: block; }
+}
+
+@media (max-width: 768px) {
+  .admission-step {
+    flex-direction: column;
+    text-align: center;
+  }
+  .page-banner {
+    padding: 7rem 0 3rem !important;
+  }
+  .page-banner h1 {
+    font-size: 2.2rem !important;
+  }
+  .page-banner p {
+    font-size: 1.1rem !important;
+  }
   .logo img {
     height: 40px !important;
   }
-  
-  /* Hide Top bar on very small screens to save space, or just center */
   .top-bar-container {
     flex-direction: column;
     gap: 5px;
     font-size: 0.75rem;
   }
-  
   .hero-content h1 { font-size: 2.2rem; }
-  .stats-grid { grid-template-columns: 1fr 1fr; } /* Keep stats 2x2 on mobile */
+  .stats-grid { grid-template-columns: 1fr 1fr; }
 }
-
 @media (max-width: 480px) {
-  .stats-grid { grid-template-columns: 1fr; } /* 1x4 on very small phones */
+  .stats-grid { grid-template-columns: 1fr; }
 }
