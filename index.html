@@ -12,6 +12,9 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -92,7 +95,7 @@
   <header class="hero">
     <div class="hero-overlay"></div>
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content" data-aos="fade-up">
         <h1>Achieve Your Dreams With Smart Education</h1>
         <p>Join Sree Venkateswara Colleges for value-based, career-oriented education with personalized guidance. Your pathway to success in JEE, CA, Civils, and corporate careers starts here.</p>
         <div class="hero-buttons">
@@ -107,22 +110,22 @@
   <section class="stats">
     <div class="container">
       <div class="stats-grid">
-        <div class="stat-card">
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
           <i class="fas fa-history"></i>
           <h3>20+</h3>
           <p>Years of Excellence</p>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
           <i class="fas fa-user-graduate"></i>
           <h3>20,000+</h3>
           <p>Successful Alumni</p>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
           <i class="fas fa-chalkboard-teacher"></i>
           <h3>90+</h3>
           <p>Expert Faculty</p>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
           <i class="fas fa-award"></i>
           <h3>99%</h3>
           <p>Success Rate</p>
@@ -134,27 +137,27 @@
   <!-- About Preview Section -->
   <section class="py-5 bg-light" id="about">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <h2>Why Choose SV Colleges?</h2>
         <p>We provide a comprehensive academic foundation combined with expert coaching to ensure our students excel in competitive exams and their chosen careers.</p>
       </div>
       
       <div class="cards-grid">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-body text-center">
             <i class="fas fa-laptop-code" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
             <h3 class="card-title">Interactive Learning</h3>
             <p class="card-text">Modern teaching methodologies that focus on conceptual clarity and practical application.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-body text-center">
             <i class="fas fa-users" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
             <h3 class="card-title">Expert Mentorship</h3>
             <p class="card-text">Personalized guidance from experienced faculty to track progress and improve performance.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-body text-center">
             <i class="fas fa-book-reader" style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;"></i>
             <h3 class="card-title">Integrated Coaching</h3>
@@ -172,14 +175,14 @@
   <!-- Courses Section -->
   <section class="py-5" id="courses">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <h2>Our Premium Programs</h2>
         <p>Explore our wide range of Intermediate and Degree programs designed to build a strong foundation for a bright future.</p>
       </div>
       
       <div class="cards-grid">
         <!-- Course 1 -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-img">
             <!-- Using a solid color or gradient as fallback if image isn't generated -->
             <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #1e3a8a, #3b82f6); display: flex; align-items: center; justify-content: center; color: white;">
@@ -189,12 +192,12 @@
           <div class="card-body">
             <h3 class="card-title">MPC with JEE Mains/NDA</h3>
             <p class="card-text">A rigorous program combining the Mathematics, Physics, and Chemistry core with focused preparation for engineering entrances.</p>
-            <a href="#" class="btn btn-outline" style="align-self: flex-start;">View Details</a>
+            <a href="mpc-jee-nda.html" class="btn btn-outline" style="align-self: flex-start;">View Details</a>
           </div>
         </div>
         
         <!-- Course 2 -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-img">
             <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #f59e0b, #d97706); display: flex; align-items: center; justify-content: center; color: white;">
               <i class="fas fa-chart-line fa-4x"></i>
@@ -203,12 +206,12 @@
           <div class="card-body">
             <h3 class="card-title">MEC with CA Foundation</h3>
             <p class="card-text">Build a strong commerce foundation alongside intensive preparation for the CA Foundation examinations.</p>
-            <a href="#" class="btn btn-outline" style="align-self: flex-start;">View Details</a>
+            <a href="mec-ca-civils.html" class="btn btn-outline" style="align-self: flex-start;">View Details</a>
           </div>
         </div>
         
         <!-- Course 3 -->
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
           <div class="card-img">
             <div style="width: 100%; height: 100%; background: linear-gradient(45deg, #10b981, #059669); display: flex; align-items: center; justify-content: center; color: white;">
               <i class="fas fa-laptop fa-4x"></i>
@@ -217,7 +220,7 @@
           <div class="card-body">
             <h3 class="card-title">B.Com Computer Applications</h3>
             <p class="card-text">Merge traditional accounting knowledge with modern IT skills like Tally, MS Excel, and databases for corporate readiness.</p>
-            <a href="#" class="btn btn-outline" style="align-self: flex-start;">View Details</a>
+            <a href="bcom-computer-applications.html" class="btn btn-outline" style="align-self: flex-start;">View Details</a>
           </div>
         </div>
       </div>
@@ -227,7 +230,7 @@
   <!-- Campuses Section -->
   <section class="py-5 bg-dark" id="campuses">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <h2 style="color: white;">Our Campuses in Hyderabad</h2>
         <p style="color: rgba(255,255,255,0.8);">Strategically located state-of-the-art facilities designed to foster an optimal learning environment.</p>
       </div>
@@ -321,5 +324,15 @@
 
   <!-- Custom JS -->
   <script src="js/main.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>

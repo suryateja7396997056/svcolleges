@@ -8,6 +8,9 @@
   <title>Campus Gallery | SV Colleges</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Top Bar -->
@@ -85,14 +88,14 @@
 
   <section class="page-banner" style="padding: 10rem 0 6rem; background: linear-gradient(135deg, rgba(30,58,138,0.9), rgba(59,130,246,0.9)), url('assets/images/hero.png') center/cover;">
     <div class="container text-center">
-      <h1 style="font-size: 4rem; text-shadow: 0 4px 10px rgba(0,0,0,0.3);">Campus Gallery</h1>
-      <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto;">Explore the campus life, facilities, and events.</p>
+      <h1 data-aos="fade-down" style="font-size: 4rem; text-shadow: 0 4px 10px rgba(0,0,0,0.3);">Campus Gallery</h1>
+      <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.3rem; max-width: 800px; margin: 0 auto;">Explore the campus life, facilities, and events.</p>
     </div>
   </section>
   <section class="py-5" style="background-color: var(--white);">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: start;">
-        <div>
+        <div data-aos="fade-right">
           <h2 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1.5rem;">Detailed Information</h2>
           <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.8;">
             Welcome to the detailed page for Campus Gallery. At SV Colleges, we pride ourselves on delivering deep, comprehensive, and unparalleled educational services. Our institution ensures that every aspect of the student's journey is mapped out with precision, from the very first induction class to their final campus placement or competitive exam.
@@ -108,7 +111,7 @@
             <li style="margin-bottom: 1rem; display: flex; align-items: center; font-size: 1.1rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 15px; font-size: 1.5rem;"></i> Specialized focus on both soft skills and rigorous academic material.</li>
           </ul>
         </div>
-        <div style="background: var(--bg-color); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border-top: 5px solid var(--primary-color);">
+        <div data-aos="fade-left" style="background: var(--bg-color); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border-top: 5px solid var(--primary-color);">
           <h3 style="margin-bottom: 1.5rem; color: var(--primary-color); font-size: 1.8rem;"><i class="fas fa-info-circle"></i> Quick Facts</h3>
           <div style="margin-bottom: 1.5rem;">
             <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Legacy</h4>
@@ -198,5 +201,15 @@
   </a>
 
   <script src="js/main.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>

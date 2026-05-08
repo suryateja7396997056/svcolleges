@@ -94,6 +94,9 @@
       }
     }
   </style>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -349,6 +352,16 @@
       e.preventDefault();
       alert('Thank you for your enquiry! Our admissions team will contact you shortly.');
       this.reset();
+    });
+  </script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
     });
   </script>
 </body>

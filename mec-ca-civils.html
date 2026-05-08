@@ -8,6 +8,9 @@
   <title>MEC with CA Foundation/Civils | SV Colleges</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Top Bar -->
@@ -86,14 +89,14 @@
   <section class="page-banner" style="padding: 10rem 0 6rem; background: linear-gradient(135deg, rgba(30,58,138,0.9), rgba(59,130,246,0.9)), url('assets/images/hero.png') center/cover;">
     <div class="container text-center">
       <span style="background: var(--secondary-color); color: white; padding: 5px 15px; border-radius: 20px; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 1rem; display: inline-block;">Intermediate Program</span>
-      <h1 style="font-size: 4rem; text-shadow: 0 4px 10px rgba(0,0,0,0.3);">MEC with CA Foundation / Civils</h1>
-      <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto;">A dynamic blend of Mathematics, Economics, and Commerce tailored to launch careers in Chartered Accountancy and Administration.</p>
+      <h1 data-aos="fade-down" style="font-size: 4rem; text-shadow: 0 4px 10px rgba(0,0,0,0.3);">MEC with CA Foundation / Civils</h1>
+      <p data-aos="fade-up" data-aos-delay="100" style="font-size: 1.3rem; max-width: 800px; margin: 0 auto;">A dynamic blend of Mathematics, Economics, and Commerce tailored to launch careers in Chartered Accountancy and Administration.</p>
     </div>
   </section>
   <section class="py-5" style="background-color: var(--white);">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: center;">
-        <div>
+        <div data-aos="fade-right">
           <h2 style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1.5rem;">Your Gateway to the Corporate World</h2>
           <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.8;">
             The MEC curriculum is designed for students with a high aptitude for numbers and a passion for business strategy, economics, and national administration. At SV Colleges, we take MEC a step further by fully integrating Chartered Accountancy (CA Foundation) and UPSC Civil Services Foundation into the coursework.
@@ -107,7 +110,7 @@
             <li style="margin-bottom: 1rem; display: flex; align-items: center; font-size: 1.1rem;"><i class="fas fa-check-circle" style="color: var(--secondary-color); margin-right: 15px; font-size: 1.5rem;"></i> <strong>ICAI Aligned Material:</strong> Curriculum precisely matched to the latest ICAI modules.</li>
           </ul>
         </div>
-        <div style="background: var(--bg-color); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border-top: 5px solid var(--secondary-color);">
+        <div data-aos="fade-left" style="background: var(--bg-color); padding: 3rem; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); border-top: 5px solid var(--secondary-color);">
           <h3 style="margin-bottom: 1.5rem; color: var(--primary-color); font-size: 1.8rem;"><i class="fas fa-info-circle"></i> Course Highlights</h3>
           <div style="margin-bottom: 1.5rem;">
             <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Eligibility</h4>
@@ -197,5 +200,15 @@
   </a>
 
   <script src="js/main.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>

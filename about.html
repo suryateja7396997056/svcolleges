@@ -9,6 +9,9 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -124,7 +127,7 @@
   <!-- Academic Philosophy -->
   <section class="py-5" style="background-color: var(--bg-color);">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <h2>Our Academic Philosophy</h2>
         <p>We blend conceptual teaching with rigorous competitive exam preparation.</p>
       </div>
@@ -223,5 +226,15 @@
   </a>
 
   <script src="js/main.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>
